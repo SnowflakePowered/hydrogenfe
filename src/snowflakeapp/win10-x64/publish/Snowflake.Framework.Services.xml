@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Snowflake.Framework.Services</name>
+    </assembly>
+    <members>
+        <member name="M:Snowflake.Services.AssemblyLoader.AssemblyModuleLoadContext.Load(System.Reflection.AssemblyName)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.AssemblyLoader.AssemblyModuleLoader.LoadModule(Snowflake.Loader.IModule)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.AssemblyLoader.Extensions.EnumerableExtensions.ContainsAll``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Does a list contain all values of another list?
+            </summary>
+            <remarks>Needs .NET 3.5 or greater.  Source:  https://stackoverflow.com/a/1520664/1037948 </remarks>
+            <typeparam name="T">list value type</typeparam>
+            <param name="containingList">the larger list we're checking in</param>
+            <param name="lookupList">the list to look for in the containing list</param>
+            <returns>true if it has everything</returns>
+        </member>
+        <member name="P:Snowflake.Services.ContentDirectoryProvider.ApplicationData">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.Logging.LogProvider.GetLogger(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Snowflake.Services.Logging.NlogLogger.Name">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.Logging.NlogLogger.Debug(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.Logging.NlogLogger.Error(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.Logging.NlogLogger.Error(System.Exception,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.Logging.NlogLogger.Fatal(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.Logging.NlogLogger.Info(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.Logging.NlogLogger.Trace(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.Logging.NlogLogger.Warn(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.Logging.NlogLogger.Log(System.String,Snowflake.Extensibility.LogLevel)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.Persistence.SqliteDatabaseProvider.CreateDatabase(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.Persistence.SqliteDatabaseProvider.CreateDatabase(System.String,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Snowflake.Services.ServiceContainer.AppDataDirectory">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.ServiceContainer.RegisterService``1(``0)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.ServiceContainer.AvailableServices">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.ServiceContainer.Get``1">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.ServiceContainer.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:Snowflake.Services.ServiceRegistrationProvider.RegisterService``1(``0)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

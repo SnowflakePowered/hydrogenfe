@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Snowflake Debug Landing Page</title>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      .grid-wrapper {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: auto 2em;
+        grid-template-columns: 100vw;
+        grid-template-areas: 
+          "console-display"
+          "toolbar";
+      }
+      #editor {
+        grid-area: console-display;
+        background: rgb(39, 39, 39);
+        color: #ABD5FF;
+      }
+      #editor:focus {
+        outline: none;
+      }
+      #toolbar {
+        grid-area: toolbar;
+        background: #bbbbbb
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-wrapper">
+      <div id="editor">Snowflake output will appear here.</div>
+
+      <div id="toolbar">Hello World</div>
+    </div>
+	<script src="./ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>

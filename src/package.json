@@ -1,0 +1,19 @@
+{
+  "name": "hydrogen-fe",
+  "version": "0.0.1",
+  "description": "Emulator Frontend based on Snowflake and Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/SnowflakePowered/hydrogenfe",
+  "author": "Snowflake Authors",
+  "license": "MPL2",
+  "private": true,
+  "devDependencies": {
+    "electron": "^1.7.10"
+  },
+  "dependencies": {
+    "electron-fetch": "^1.1.0"
+  }
+}
