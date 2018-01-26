@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Snowflake Debug Landing Page</title>
+    <title>hydrogen Debug Landing Page</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <style>
       body {
         overflow: hidden;
@@ -13,9 +14,10 @@
         height: 100vh;
         width: 100vw;
         display: grid;
-        grid-template-rows: auto 2em;
+        grid-template-rows: 2rem auto 3rem;
         grid-template-columns: 100vw;
         grid-template-areas: 
+          "warning"
           "console-display"
           "toolbar";
       }
@@ -29,15 +31,36 @@
       }
       #toolbar {
         grid-area: toolbar;
-        background: #bbbbbb
+        background: #bbbbbb;
+        display: grid;
+        grid-template-columns: 80% auto;
+        grid-template-rows: 100%;
+        grid-template-areas:
+          "theme-select theme-launch";
+      }
+      #theme-select {
+        grid-area: theme-select;
+      }
+      #theme-launch {
+        grid-area: theme-launch;
+      }
+      #warning {
+        grid-area: warning;
+        background: red;
+        color: white;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
     <div class="grid-wrapper">
+      <div id="warning">hydrogen DEVELOPER PREVIEW.</div>
       <div id="editor">Snowflake output will appear here.</div>
-
-      <div id="toolbar">Hello World</div>
+      <div id="toolbar">
+        <select id="theme-select" class="custom-select custom-select-lg mb-3 col-sm">
+        </select>
+        <button id="theme-launch" type="button" class="btn btn-primary col-sm">Launch</button>
+      </div>
     </div>
 	<script src="./ace.js" type="text/javascript" charset="utf-8"></script>
     <script>
